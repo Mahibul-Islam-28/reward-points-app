@@ -7,7 +7,9 @@ import { Button } from "react-native-web";
 
 const Index = ( {navigation} ) => {
   const [points, setPoints] = useState(0);
-  const [invoice, setInvoice] = useState("");
+  // const [invoice, setInvoice] = useState("");
+
+    const [invoice, setInvoice] = useState([]);
   const [userName, setUserName] = useState("");
   const [results, setResults] = useState([]);
   const [user_id, setUserID] = useState("");
@@ -34,7 +36,7 @@ const Index = ( {navigation} ) => {
       if (response.status == 200) {
         const result = await response.json();
         setPoints(result)
-          
+
       }
       else throw new Error('HTTP response status not code 200 as expected.');
     })
@@ -56,7 +58,7 @@ const Index = ( {navigation} ) => {
       if (response.status == 200) {
         const result = await response.json()
         const results = []
-        
+
         result.forEach((invoice, index) => {
           results.push(
               <View style={styles.tableRow} key={index}>
@@ -71,10 +73,10 @@ const Index = ( {navigation} ) => {
             );
           });
 
-          */
+
 
           setInvoice(results)
-  
+
       }
       else throw new Error('HTTP response status not code 200 as expected.');
     })
@@ -91,6 +93,9 @@ const Index = ( {navigation} ) => {
       getInvoice();
     }
   });
+
+
+  // console.log(" <<invoice>>: ",invoice);
 
   return (
     <View>
@@ -116,7 +121,7 @@ const Index = ( {navigation} ) => {
             <View>{invoice}</View>
           </View>
 
-      </View>    
+      </View>
     </View>
   );
 };
