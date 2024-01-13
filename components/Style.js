@@ -42,28 +42,37 @@ const styles = StyleSheet.create({
 
     table: {
         border: '1px solid #333',
+        width: '100%',
+        textAlign: 'center'
+    },
+    // tableRow: {
+    //     paddingVertical: 20,
+    // },
+    // tableData: {
+    //     borderWidth: 1,
+    //     borderColor: "thistle",
+    //     borderRadius: 50,
+    //     fontSize: 25,
+    // },
+    tableHead: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        fontWeight: 'bold',
+        backgroundColor: '#333',
+        color: 'white',
+        padding: 7,
+    },
+    tableHeadText: {
+        color: 'white',
     },
     tableRow: {
-        paddingVertical: 20,
-    },
-    tableData: {
-        borderWidth: 1,
-        borderColor: "thistle",
-        borderRadius: 50,
-        fontSize: 25,
-    },
-    th: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         border: '1px solid #333',
-    },
-    td:{
         padding: 5,
-        backgroundColor: '#111',
-        color: '#fff',
     },
-    th: {
-        padding: 5,
-        backgroundColor: '#111',
-        color: '#fff',
+    tableRowText: {
+        textAlign: 'left',
     },
 
     rewardCard: {

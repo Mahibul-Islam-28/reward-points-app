@@ -10,10 +10,20 @@ const Index = ( {navigation} ) => {
   const [invoice, setInvoice] = useState("");
   const [userName, setUserName] = useState("");
   const [results, setResults] = useState([]);
+  const [user_id, setUserID] = useState("");
 
   const getData = async () => {
+    try {
+      const value = await AsyncStorage.getItem('user_id');
+      if (value !== null) {
+        setUserID(value);
+      }
+    } catch (e) {
+      // error reading value
+    }
+
     const url = "http://192.168.0.114:8000/api/get_points";
-    const user_id = 1;
+
     let response  = await fetch(url, {
       method: "POST",
       body: JSON.stringify({ user_id }),
@@ -44,33 +54,27 @@ const Index = ( {navigation} ) => {
       }
     }).then(async function(response) {
       if (response.status == 200) {
-        const result = await response.json();
-        // const abc = Object.keys(result).map(key => ({[key]: result[key]}));
+        const result = await response.json()
+        const results = []
+        /*
+        result.forEach((invoice, index) => {
+          results.push(
+              <View style={styles.tableRow} key={index}>
+                <Text style={styles.tableRowText}>{invoice.id}</Text>
+                <Text style={styles.tableRowText}>{invoice.shop_name}</Text>
+                <Text style={styles.tableRowText}>{invoice.invoice_id}</Text>
+                <Text style={styles.tableRowText}>{invoice.category}</Text>
+                <Text style={styles.tableRowText}>{invoice.amount}</Text>
+                <Text style={styles.tableRowText}>{invoice.date}</Text>
+                <Text style={styles.tableRowText}>{invoice.points}</Text>
+              </View>
+            );
+          });
 
-        // setInvoice(JSON.stringify(result));
-        // setInvoice(JSON.parse(result));
-        // setInvoice(result);
+          */
 
-      const results = [];
-
-      result.forEach((invoice, index) => {
-        results.push(
-            <tr style={styles.tableRow}>
-              <td>{invoice.id}</td>
-              <td>{invoice.shop_name}</td>
-              <td>{invoice.invoice_id}</td>
-              <td>{invoice.category}</td>
-              <td>{invoice.amount}</td>
-              <td>{invoice.date}</td>
-              <td>{invoice.points}</td>
-            </tr>
-          );
-        });
-
-        setInvoice(results);
-
-
-          
+          setInvoice(results)
+  
       }
       else throw new Error('HTTP response status not code 200 as expected.');
     })
@@ -80,29 +84,12 @@ const Index = ( {navigation} ) => {
 
   };
 
-  const getUser = async () => {
-    try {
-      const value = await AsyncStorage.getItem('user_name');
-      if (value !== null) {
-        setUserName(value);
-      }
-      else{
-        console.log("noo");
-      }
-    } catch (e) {
-      // error reading value
-    }
-  };
-
-  const logout = () => {
-    AsyncStorage.clear();
-    navigation.navigate("Login");
-  };
-
   useEffect( () => {
-    getUser();
-    getData();
-    getInvoice();
+    getData()
+    if(user_id)
+    {
+      getInvoice();
+    }
   });
 
   return (
@@ -111,29 +98,24 @@ const Index = ( {navigation} ) => {
           <Menu />
         </View>
       <View style={styles.container}>
-
             <View style={styles.rewardCard}>
               <Text style={styles.number}>{points}</Text>
               <Text style={styles.cardText}>Your Points</Text>
             </View>
 
+          <View style={styles.table}>
+            <View style={styles.tableHead}>
+                <Text style={styles.tableHeadText}>ID</Text>
+                <Text style={styles.tableHeadText}>Shop Name</Text>
+                <Text style={styles.tableHeadText}>Invoice ID</Text>
+                <Text style={styles.tableHeadText}>Category</Text>
+                <Text style={styles.tableHeadText}>Amount</Text>
+                <Text style={styles.tableHeadText}>Date</Text>
+                <Text style={styles.tableHeadText}>Points</Text>
+            </View>
+            <View>{invoice}</View>
+          </View>
 
-          <table style={styles.table}>
-              <thead>
-                  <tr style={styles.tableRow}>
-                    <th>ID</th>
-                    <th>Shop Name</th>
-                    <th>Invoice ID</th>
-                    <th>Category</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th>Points</th>
-                  </tr>
-              </thead>
-              <tbody>
-                {invoice}
-              </tbody>
-          </table>
       </View>    
     </View>
   );

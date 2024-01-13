@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Text,  View, TextInput, Button, Platform } from "react-native";
-import DatePicker from 'react-native-datepicker';
-import DateTimePicker from '@react-native-community/datetimepicker';
+// import DatePicker from 'react-native-datepicker';
+// import DateTimePicker from '@react-native-community/datetimepicker';
 import Menu from "./Menu";
 import SelectDropdown from 'react-native-select-dropdown';
 import { styles } from "./Style";
