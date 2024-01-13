@@ -56,7 +56,7 @@ const Index = ( {navigation} ) => {
       if (response.status == 200) {
         const result = await response.json()
         const results = []
-        /*
+        
         result.forEach((invoice, index) => {
           results.push(
               <View style={styles.tableRow} key={index}>
