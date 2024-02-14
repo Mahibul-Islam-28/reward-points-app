@@ -1,0 +1,38 @@
+.work-section{
+     min-height: 80vh;
+     padding: 2rem 0;
+}
+.work-section h1{
+     text-align: center;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+}
+.work-section a{
+     text-decoration: none;
+}
+.work-section .carousel-indicators [data-bs-target] {
+     height: 13px;
+     width: 13px;
+     border-radius: 50%;
+
+}
+.carousel-control-prev i,
+.carousel-control-next i{
+     color: #fff;
+     font-size: 2rem;
+}
+.carousel-control-prev,
+.carousel-control-next{
+     width: 7%;
+}
+.carousel-control-prev i{
+     left: 10px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 991px) {
+     .work-section .col-lg-6{
+          margin-bottom: 2rem;
+     }
+     
+ }

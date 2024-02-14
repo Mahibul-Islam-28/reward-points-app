@@ -1,0 +1,32 @@
+/* members */
+.activity-feed {
+    margin-top: 0px;
+}
+
+/* member */
+.member-card {
+    text-align: center;
+    height: 360px;
+    margin-top: 20px;
+}
+
+.member-card .card-head {
+    text-align: center;
+    height: 120px;
+}
+
+.member-card .card-body h3 {
+    height: 70px;
+}
+
+.member-card img {
+    height: 120px;
+    width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .post-details {
+        margin-left: 0px;
+    }
+
+}

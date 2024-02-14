@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* sidebar */
+.admin-header {
+    padding-top: 20px;
+    background: rgb(214, 214, 214);
+    min-height: 100vh;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 75%;
+}
+
+.admin-header ul li {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.admin-header ul li a {
+    color: #333;
+    font-size: 13px;
+    padding: 20px 15px;
+}
+
+.admin-header ul li:hover,
+.admin-header .active {
+    background: whitesmoke;
+    color: #fff;
+}
+
+.admin-header ul li a:hover {
+    color: #333;
+}
+
+.admin-header .navbar-brand {
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* footer */
+.footer-section {
+    background: rgb(214, 214, 214);
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+/* Button */
+.unblock-btn {
+    padding: 3px 5px;
+    color: #fff;
+    background: #198754;
+    border: none;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.temporary-btn {
+    padding: 3px 5px;
+    color: #fff;
+    background: #eea236;
+    border: none;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.permanent-btn {
+    padding: 3px 5px;
+    color: #fff;
+    background: #dc3545;
+    border: none;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.table img {
+    height: 50px;
+    width: 50px;
+}
+
+/* notification */
+
+.activity-form {
+    width: 100%;
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.activity-form .input-area {
+    display: flex;
+    width: 100%;
+}
+
+.activity-form textarea {
+    width: 100%;
+    border: gray;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.activity-form .row {
+    text-align: left;
+    align-self: center;
+    margin-left: 0px;
+}
+
+.activity-form .row input,
+.activity-form .row select {
+    margin-top: 10px;
+}
+
+.activity-form .row select {
+    border-color: gray;
+    padding: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* data table */
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 10px;
+}
+
+table.dataTable {
+    border-collapse: collapse;
+}
+
+#myTable_filter input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+#myTable_filter input:focus {
+    outline: none;
+}

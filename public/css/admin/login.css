@@ -1,0 +1,40 @@
+.container{
+     align-items: center;
+}
+#login-card{
+     height: 100%;
+     width: 350px;
+     justify-content: center;
+     margin: 0 auto;
+     border: 1px solid rgba(200, 200, 200, 0.7);
+     border-top: 5px solid black;
+     padding: 15px;
+     border-radius: 3px;
+     align-self: center;
+     margin-top: 17%;
+}
+
+#login-card .logo{
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+}
+#login-card img{
+     width: 60%;
+     margin: 10px 0px;
+}
+.input-group-append{
+     background: #fff;
+}
+.input-group-append i{
+     height: 25px;
+     margin-top: 4px;
+     cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+
+     #login-card{
+          width: 90%;
+     }
+}

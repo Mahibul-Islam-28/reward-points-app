@@ -1,0 +1,320 @@
+.login-section,
+.verify-section,
+.change-password-section,
+.forgot-section {
+    background: url('../images/background/1920X1080.png');
+    min-height: 84.7vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+}
+
+.login-card {
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.login-card img {
+    width: 200px;
+    height: 50px;
+}
+
+.login-card a {
+    color: maroon;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.input-group-text img {
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.login-card .input-group-text {
+    padding: 0px 3px;
+}
+
+.login-section i,
+.register-section i,
+.change-password-section i {
+    cursor: pointer;
+}
+
+.login-section .form-group i {
+    text-align: right;
+}
+
+.country-code {
+    display: inline-flex;
+}
+
+#country {
+    width: 95px;
+    border: 1px solid #ced4da;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+}
+
+#country:focus {
+    border: 1px solid #ced4da;
+    border-right: none;
+    outline: none;
+}
+
+#basic-addon2 {
+    background: transparent;
+    border-left: none;
+
+}
+
+.change-password-section input[type=password],
+.change-password-section input[type=text],
+.login-section input[type=password],
+.login-section .input-group input[type=text] {
+    border-right: none;
+}
+
+#hide-pass,
+#hide-confirm,
+#notMatch,
+#match {
+    display: none;
+}
+
+.change-password-section .login-card {
+    height: 420px;
+}
+
+/* Register section */
+.register-section {
+    background: url('../images/background/R_1920X1080.png');
+    min-height: 84.7vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+}
+
+.register-section input {
+    height: 35px;
+}
+
+.register-section .form-group {
+    margin-bottom: 7px;
+}
+
+.register-section .country-code input {
+    border-left: none;
+}
+
+.register-section #basic-addon2 {
+    height: 35px;
+}
+
+.register-section input[type=password],
+.register-section .input-group input[type=text] {
+    border-right: none;
+}
+
+.register-section input[type=submit] {
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.register-card {
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    width: 420px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.register-card img {
+    width: 200px;
+    height: 40px;
+}
+
+.register-card a {
+    color: maroon;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.register-section .icon {
+    margin-top: 30px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.register-section .error
+{
+    color: rgb(200, 11, 11);
+}
+.register-section #phone
+{
+    min-width: 55%;
+}
+
+.store-section {
+    margin: auto;
+    text-align: center;
+    background: black;
+    padding-bottom: 20px;
+}
+
+.store-section .store_image {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.footer-section {
+    background: black !important;
+}
+.work-link{
+    background-color: black;
+    text-align: center;
+}
+.work-link a{
+    font-size: 1.7rem;
+    font-style: italic;
+    font-stretch: expanded;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.work-link a:hover{
+    color: #e2e2e2;
+    transition: ease-in .5s;
+}
+.footer-section a,
+.footer-section small {
+    color: #fff;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1366px) {
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/1366x768.png');
+    }
+    .register-section
+    {
+        background: url('../images/background/R_1366x768.png');
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/1280x800.png');
+    }
+    .register-section
+    {
+        background: url('../images/background/R_1280x800.png');
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/1024X600.png');
+    }
+    .register-section
+    {
+        background: url('../images/background/R_1024X600.png');
+    }
+}
+@media only screen and (max-width: 820px) {
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/820x1024.png');
+    }
+    .register-section
+    {
+        background: url('../images/background/R_820x1120.png');
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .register-section
+    {
+        background: url('../images/background/R_768x1024.png');
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/414x896.png');
+    }
+    .login-card{
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .register-card {
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        margin-top: 10px;
+    }
+    .register-section
+    {
+        background: url('../images/background/R_414x896.png');
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/393x851.png');
+    }
+    .register-section
+    {
+        background: url('../images/background/R_390x844.png');
+    }
+
+}
+@media only screen and (max-width: 360px) {
+
+    .login-section,
+    .verify-section,
+    .change-password-section,
+    .forgot-section {
+        background: url('../images/background/360x740.png');
+    }
+    .register-section
+    {
+        background: url('../images/background/R_360x740.png');
+    }
+
+}

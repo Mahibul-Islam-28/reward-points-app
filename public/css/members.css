@@ -1,0 +1,51 @@
+.member-section {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 77vh;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 600;
+}
+
+.active {
+    border-bottom: 2px solid #333;
+}
+
+.member-card {
+    text-align: center;
+    height: 360px;
+    margin-top: 20px;
+}
+
+.member-card .card-head {
+    text-align: center;
+    height: 120px;
+}
+
+.member-card .card-body h3 {
+    height: 70px;
+}
+
+.member-card img {
+    height: 120px;
+    width: 120px;
+}
+
+#member-search input {
+    width: 222px;
+    margin-bottom: 20px;
+}
+
+/* for block */
+#block-list .member-card {
+    height: 300px;
+}
+
+/* search-list */
+/* #search-list img{
+     width: 100px;
+     height: 100px;
+} */

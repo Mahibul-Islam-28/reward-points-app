@@ -1,0 +1,30 @@
+.setting-section{
+     min-height: 85vh;
+}
+
+.setting-section i:hover
+{
+     cursor: pointer;
+}
+
+#basic-addon2
+{
+     background: transparent;
+     border-left: none;
+     
+}
+.setting-section input[type=password],
+.setting-section input[type=text]
+
+{
+     border-right: none;
+}
+
+#hide-oldPass,
+#hide-newPass,
+#hide-conPass,
+#notMatch,
+#match
+{
+     display: none;
+}

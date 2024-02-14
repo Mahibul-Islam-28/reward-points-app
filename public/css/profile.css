@@ -1,0 +1,228 @@
+.ixprez-section,
+.profile-section {
+    min-height: 77vh;
+}
+
+.cover-image img {
+    width: 100%;
+    height: fit-content;
+    max-height: 500px;
+     min-height: 350px;
+    z-index: 0;
+}
+
+#coverimage-edit {
+    position: absolute;
+    top: 70px;
+    left: 7px;
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.cover-image:hover>#coverimage-edit {
+    color: #333;
+    background: #fff;
+}
+
+.name-section {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.profile-section .nav-link {
+    padding: 0;
+}
+
+.profile-name {
+    align-self: center;
+}
+
+.name-section img {
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    text-align: center;
+}
+
+.name-section .button-group button {
+    margin-top: 7px;
+}
+
+.like-section img {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+
+.like-section button {
+    border: none;
+    height: 70px;
+    width: 70px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.voteUp-count {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.score-section {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.score-section h5 {
+    margin-top: 30px;
+}
+
+/* Profile */
+.profile-content {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.profile-subnav {
+    font-size: 13px;
+}
+
+/* cover */
+.cover-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.activity-feed {
+    margin-top: 25px;
+}
+.activity-content{
+    text-align: left;
+    text-wrap: wrap;
+    display: block;
+    flex-wrap: wrap;
+    
+}
+.activity-content p{
+    text-align: left;
+}
+.activity-content img{
+    display: block;
+}
+.activity-content .debugBox{
+    display: block;
+    margin-top: 10px;
+}
+
+.acitivity-section .navbar,
+.profile-content .navbar,
+.cover-content .navbar {
+    overflow-x: auto;
+}
+
+/* ativity meta */
+
+.ativity-meta div {
+    display: inline-flex;
+}
+
+.ativity-meta div a {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #333;
+    background: #fff;
+}
+
+.ativity-meta .edit,
+.ativity-meta .comment {
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+
+.edit-count {
+    display: none;
+}
+
+/* media Query */
+@media only screen and (min-width: 1400px) {
+    .profile-image {
+        margin-right: -50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .name-section {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .name-section .profile-image {
+        display: block;
+    }
+
+    .score-section {
+        margin-top: 30px;
+    }
+
+    .name-section {
+        width: 45%;
+    }
+    .cover-image img {
+        max-height: 400px;
+        min-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .acitivity-section {
+        width: 80%;
+        margin-top: 40px;
+    }
+    .cover-image img {
+        max-height: 300px;
+        min-height: 150px;
+    }
+    .name-section{
+        margin-top: -80px;
+    }
+    .name-section .profile-image img{
+        width: 150px;
+        height: 150px;
+    }
+    .activity-section .navbar-expand .navbar-nav .nav-link
+    {
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .name-section {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1380px) {
+    .post-details {
+        margin-left: 0px;
+    }
+}

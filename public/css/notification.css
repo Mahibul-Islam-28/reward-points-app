@@ -1,0 +1,116 @@
+.cover-image img{
+     width: 100%;
+     height: 350px;
+     z-index: 0;
+}
+#coverimage-edit{
+     position: absolute;
+     top: 70px;
+     left: 7px;
+     font-size: 21px;
+     color: rgba(255, 255, 255, 0.5);
+     background: transparent;
+     padding: 5px 10px;
+     border-radius: 50px;
+}
+.cover-image:hover > #coverimage-edit{
+     color: #333;
+     background: #fff;
+}
+.name-section{
+     width: 60%;
+     height: 100%;
+     margin: 0 auto;
+     margin-top: -100px;
+     background: #fff !important;
+     z-index: 1;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+     position: relative;
+     border-radius: 5px;
+     align-items: center;
+}
+.profile-section .nav-link{
+     padding: 0;
+}
+.profile-name{
+     align-self: center;
+}
+.name-section img{
+     margin: 10px;
+     width: 180px;
+     height: 180px;
+     border-radius: 50%;
+     border: 5px solid #fff;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+     justify-content: center;
+     text-align: center;
+}
+.name-section .button-group button{
+     margin-top: 7px;
+}
+.like-section img{
+     margin: 10px;
+     width: 50px;
+     height: 50px;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+.like-section button{
+     border: none;
+     height: 70px;
+     width: 70px;
+     background: transparent;
+     cursor: pointer;
+     margin-top: 7px;
+}
+.voteUp-count{
+     text-decoration: none;
+     color: #333;
+     cursor: pointer;
+}
+
+.score-section
+{
+    text-align: center;
+    margin-top: 70px;
+}
+.score-section h5{
+    margin-top: 30px;
+}
+
+/* table */
+table
+{
+     max-width: 70%;
+     margin: 0 auto;
+     justify-content: center;
+}
+a:hover{
+     cursor: pointer;
+     color: #333;
+}
+tbody a{
+     text-decoration: none;
+     color: #333;
+}
+
+@media only screen and (max-width: 991px) {
+     .name-section{
+          text-align: center;
+          padding-bottom: 10px;
+     }
+     .name-section .profile-image{
+          display: block;
+     }
+     .score-section{
+          margin-top: 30px;
+     }
+     .name-section{
+          width: 45%;
+     }
+}
+
+@media only screen and (max-width: 600px) {
+     .name-section{
+          width: 60%;
+     }
+}
